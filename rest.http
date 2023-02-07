@@ -1,0 +1,22 @@
+###login
+POST http://localhost:8080/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "jafar@gmail.com",
+    "password": "password"
+}
+
+###register
+POST http://localhost:8080/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "jafar",
+    "email": "jafar@gmail.com",
+    "password": "password",
+    "password_confirmation": "password"
+}
+
+#### get person
+GET http://localhost:8080/all-person HTTP/1.1

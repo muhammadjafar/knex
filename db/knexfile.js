@@ -1,3 +1,5 @@
+const { knexSnakeCaseMappers } = require("objection");
+
 module.exports = {
 
   // development: {
@@ -20,7 +22,11 @@ module.exports = {
     },
     migrations: {
       tableName: 'knex_migrations'
-    }
+    },
+    seeds:{
+      directory: './seeds'
+    },
+    ...knexSnakeCaseMappers
   },
 
   // production: {
